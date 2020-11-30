@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# black
+bluetoothctl connect F9:AB:D2:6E:54:1D &
+# blue
+bluetoothctl connect D9:17:B3:8A:F8:6A &
+# white
+bluetoothctl connect C8:3D:1E:71:F2:F1 &

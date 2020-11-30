@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for file in "$@"; do
+    filename="${file%.*}"
+    extension="${file##*.}"
+    
+    if [ "$filename" == "$extension" ]; then
+        output="${file}_pcm"
+    else
+        output="${filename}_pcm.${extension}"
+    fi
+
+    ffmpeg -i "$file" -c:v copy -c:a pcm_s16le "$output"
+done
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec="/home/jens/.local/bin/keylight-control" %U
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[de_DE]=Keylight Control
+Name=Keylight Control
+Comment[de_DE]=
+Comment=
