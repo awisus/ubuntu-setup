@@ -1,0 +1,13 @@
+[Desktop Entry]
+X-SnapInstanceName=intellij-idea
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA
+Icon=idea.png
+X-SnapAppName=intellij-idea
+Exec=/snap/bin/intellij-idea %f
+Comment=The Leading IDE for Professional Development in Java and Kotlin
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-idea
+StartupNotify=true

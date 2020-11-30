@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for file in "$@"; do
+    filename="${file%.*}"
+    extension="${file##*.}"
+    
+    if [ "$filename" == "$extension" ]; then
+        output="${file}_fixed"
+    else
+        output="${filename}_fixed.${extension}"
+    fi
+
+    ffmpeg -i "$file" -c:v copy -c:a aac -b:a 320k -movflags +faststart "$output"
+done
+

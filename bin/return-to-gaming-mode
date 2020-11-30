@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkill steam
+sleep 12s
+steam steam://open/bigpicture
