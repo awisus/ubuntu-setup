@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=guake
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[de_DE]=Guake
+Name=Guake
+Comment[de_DE]=
+Comment=
