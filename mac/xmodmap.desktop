@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
-Exec=guake
+Exec=xmodmap /home/jens/.Xmodmap
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
-Name[de_DE]=Guake
-Name=Guake
+Name[de_DE]=Xmodmap
+Name=Xmodmap
 Comment[de_DE]=
 Comment=

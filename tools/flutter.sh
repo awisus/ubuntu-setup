@@ -1,5 +1,5 @@
 #!/bin/bash
 
 rm -rf $HOME/flutter
-git clone https://github.com/flutter/flutter.git -b stable
+git clone https://github.com/flutter/flutter.git -b stable $HOME/flutter
 $HOME/flutter/bin/flutter precache

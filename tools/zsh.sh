@@ -3,6 +3,6 @@
 rm -rf $HOME/.oh-my-zsh
 
 sudo apt -y install powerline fonts-powerline zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 chsh -s /bin/zsh

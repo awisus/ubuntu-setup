@@ -1,14 +1,15 @@
 #!/bin/bash
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+sudo apt install -y fonts-firacode
 
-mkdir -p $HOME/.fonts
-rm -rf $HOME/.fonts/fira
-cp -r fonts/fira $HOME/.fonts/fira
-rm -rf $HOME/.fonts/roboto-slab
-cp -r fonts/roboto-slab $HOME/.fonts/roboto-slab
+sudo cp -r \
+    fira \
+    /usr/share/fonts/opentype
+sudo cp -r \
+    roboto-slab \
+    /usr/share/fonts/truetype
 
 gsettings set org.gnome.desktop.interface font-name 'Fira Sans Book 10'
 gsettings set org.gnome.desktop.interface document-font-name 'Roboto Slab Regular 11'
-gsettings set org.gnome.desktop.interface monospace-font-name 'Jetbrains Mono Medium 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Fira Code Retina 11'
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Fira Sans SemiBold 10'
