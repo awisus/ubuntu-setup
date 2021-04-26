@@ -3,10 +3,10 @@
 sudo apt install -y fonts-firacode
 
 sudo cp -r \
-    fira \
+    fonts/fira \
     /usr/share/fonts/opentype
 sudo cp -r \
-    roboto-slab \
+    fonts/roboto-slab \
     /usr/share/fonts/truetype
 
 gsettings set org.gnome.desktop.interface font-name 'Fira Sans Book 10'
