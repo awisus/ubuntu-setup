@@ -55,7 +55,7 @@ bash tools/zsh.sh
 
 # config
 bash fonts/fonts.sh
-bash config/pop.sh
+bash config/gedit.sh
 
 cp config/hidden $HOME/.hidden
 cp config/zshrc  $HOME/.zshrc
