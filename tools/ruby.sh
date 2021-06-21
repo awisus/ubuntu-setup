@@ -1,4 +1,10 @@
 #!/bin/bash
 
+sudo apt-get install -y \
+	libssl-dev \
+	libreadline-dev \
+	zlib1g-dev
+
 rm -rf $HOME/.rbenv
-curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
+git clone https://github.com/rbenv/rbenv.git      $HOME/.rbenv
+git clone https://github.com/rbenv/ruby-build.git $HOME/.rbenv/plugins/ruby-build
