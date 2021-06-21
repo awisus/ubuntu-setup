@@ -7,3 +7,5 @@ sudo apt-get install -y \
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker &
+
+rm $HOME/.local/bin/docker-compose
