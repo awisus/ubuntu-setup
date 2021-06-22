@@ -8,4 +8,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker &
 
-rm $HOME/.local/bin/docker-compose
+rm -rf $HOME/.local/bin/docker-compose
