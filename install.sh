@@ -62,14 +62,14 @@ cp config/zshrc  $HOME/.zshrc
 gsettings set org.gnome.shell.app-switcher current-workspace-only              true
 
 gsettings set org.gnome.shell.extensions.desktop-icons show-home               false
-gsettings set org.gnome.shell.extensions.desktop-icons show-trash              true
-gsettings set org.gnome.shell.extensions.ding show-trash                       true
+gsettings set org.gnome.shell.extensions.desktop-icons show-trash              false
+gsettings set org.gnome.shell.extensions.ding show-trash                       false
 
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed               false
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height            false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed               true
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height            true
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action             'minimize'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash               false
-gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash               true
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              true
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
 
