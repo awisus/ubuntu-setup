@@ -30,7 +30,7 @@ sudo apt install -y \
      exfat-utils \
      gimp \
      git \
-     gnome-tweak-tool \
+     gnome-tweaks \
      seahorse \
      seahorse-nautilus \
      thunderbird \
