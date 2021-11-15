@@ -1,21 +1,5 @@
 #!/bin/bash
 
-SYSTEM=$1
-
-case $SYSTEM in
-
-  mac)
-    # add keyboard support for mac
-    mkdir -p $HOME/.config/autostart
-    cp mac/xmodmap.desktop $HOME/.config/autostart
-    cp mac/Xmodmap         $HOME/.Xmodmap
-    xmodmap                $HOME/.Xmodmap
-    ;;
-
-  *)
-    ;;
-esac
-
 # apps
 sudo apt update
 sudo apt dist-upgrade -y
