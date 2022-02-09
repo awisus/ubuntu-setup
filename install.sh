@@ -27,7 +27,6 @@ sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
 
 bash apps/code.sh
-bash apps/gitkraken.sh
 bash apps/insomnia.sh
 bash apps/signal.sh
 
