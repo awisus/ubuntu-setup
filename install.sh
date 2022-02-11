@@ -12,8 +12,10 @@ sudo apt install -y \
      default-jdk \
      exfat-fuse \
      exfat-utils \
+     firefox \
      gimp \
      git \
+     gitg \
      gnome-tweaks \
      seahorse \
      seahorse-nautilus \
@@ -22,6 +24,7 @@ sudo apt install -y \
      snapd
 
 sudo snap set system refresh.retain=2
+sudo snap remove firefox
 sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
@@ -56,7 +59,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              t
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
 
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox.desktop', 'intellij-idea-ultimate_intellij-idea-ultimate.desktop', 'gitkraken-url-handler.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox.desktop', 'intellij-idea-ultimate_intellij-idea-ultimate.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 echo vm.swappiness = 10                 | sudo tee -a /etc/sysctl.conf
