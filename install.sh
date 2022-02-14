@@ -29,6 +29,7 @@ sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
 
+bash apps/chrome.sh
 bash apps/code.sh
 bash apps/insomnia.sh
 bash apps/signal.sh
@@ -49,10 +50,11 @@ gsettings set org.gnome.shell.app-switcher current-workspace-only              t
 
 gsettings set org.gnome.shell.extensions.desktop-icons show-home               false
 gsettings set org.gnome.shell.extensions.desktop-icons show-trash              false
+gsettings set org.gnome.shell.extensions.ding show-home                        false
 gsettings set org.gnome.shell.extensions.ding show-trash                       false
 
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed               true
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height            true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed               false
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height            false
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action             'minimize'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash               true
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              true
