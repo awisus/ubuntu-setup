@@ -60,7 +60,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              t
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
 
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox.desktop', 'intellij-idea-ultimate_intellij-idea-ultimate.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox_firefox.desktop', 'intellij-idea-ultimate_intellij-idea-ultimate.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 echo vm.swappiness = 10                 | sudo tee -a /etc/sysctl.conf
