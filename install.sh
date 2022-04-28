@@ -3,14 +3,6 @@
 # apps
 sudo apt update
 sudo apt dist-upgrade -y
-sudo add-apt-repository ppa:mozillateam/ppa -y
-
-echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 
 sudo apt install -y \
      build-essential \
@@ -32,7 +24,6 @@ sudo apt install -y \
      snapd
 
 sudo snap set system refresh.retain=2
-sudo snap remove firefox
 sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
