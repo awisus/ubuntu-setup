@@ -25,6 +25,7 @@ sudo apt install -y \
 
 sudo snap set system refresh.retain=2
 sudo snap install --classic bitwarden
+sudo snap install --classic intellij-idea-community
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
 
@@ -36,7 +37,6 @@ bash apps/signal.sh
 bash tools/docker.sh
 bash tools/flutter.sh
 bash tools/node.sh
-bash tools/ruby.sh
 bash tools/zsh.sh
 
 # config
@@ -60,7 +60,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              t
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
 
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox_firefox.desktop', 'intellij-idea-ultimate_intellij-idea-ultimate.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 echo vm.swappiness = 10                 | sudo tee -a /etc/sysctl.conf
