@@ -43,7 +43,6 @@ bash tools/zsh.sh
 bash fonts/fonts.sh
 
 cp config/hidden $HOME/.hidden
-cp config/zshrc  $HOME/.zshrc
 
 gsettings set org.gnome.shell.app-switcher current-workspace-only              true
 
