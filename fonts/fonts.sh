@@ -6,7 +6,7 @@ sudo cp -r \
     fonts/fira \
     /usr/share/fonts/opentype
 sudo cp -r \
-    fonts/fira-code-nerd-font \
+    fonts/firacode-nerd-font \
     /usr/share/fonts/truetype
 sudo cp -r \
     fonts/roboto-slab \
