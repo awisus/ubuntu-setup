@@ -6,6 +6,8 @@ sudo apt dist-upgrade -y
 
 sudo apt install -y \
      build-essential \
+     chromium-browser \
+     chromium-chromedriver \
      curl \
      deja-dup \
      dconf-editor \
