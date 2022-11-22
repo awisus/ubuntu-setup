@@ -31,7 +31,6 @@ sudo snap install --classic intellij-idea-community
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
 
-bash apps/chrome.sh
 bash apps/code.sh
 bash apps/insomnia.sh
 bash apps/signal.sh
