@@ -6,32 +6,32 @@ sudo apt dist-upgrade -y
 
 sudo apt install -y \
      build-essential \
-     chromium-browser \
-     chromium-chromedriver \
      curl \
      deja-dup \
      dconf-editor \
      default-jdk \
      exfat-fuse \
      exfat-utils \
-     firefox \
      gimp \
      git \
      gitg \
      gnome-tweaks \
      seahorse \
      seahorse-nautilus \
-     thunderbird \
      ttf-mscorefonts-installer \
      snapd
 
 sudo snap set system refresh.retain=2
 sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-community
-sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic heroku
+sudo apt  install -y \
+     chromium-browser \
+     chromium-chromedriver
+sudo snap remove firefox
 
 bash apps/code.sh
+bash apps/firefox.sh
 bash apps/insomnia.sh
 bash apps/signal.sh
 
