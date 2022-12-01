@@ -59,6 +59,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-trash               t
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide              true
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
+gsettings set org.gnome.desktop.wm.preferences workspace-names                 "['Terminal', 'Kommunikation', 'Arbeit', 'Spiel']"
 
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'thunderbird.desktop', 'firefox.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.gitg.desktop', 'org.gnome.Terminal.desktop']"
 
