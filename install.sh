@@ -9,7 +9,6 @@ sudo apt install -y \
      curl \
      deja-dup \
      dconf-editor \
-     default-jdk \
      exfat-fuse \
      exfat-utils \
      gimp \
@@ -37,6 +36,7 @@ bash apps/signal.sh
 
 bash tools/docker.sh
 bash tools/flutter.sh
+bash tools/java.sh
 bash tools/node.sh
 bash tools/zsh.sh
 
