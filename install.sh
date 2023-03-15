@@ -15,6 +15,8 @@ sudo apt install -y \
      git \
      gitg \
      gnome-tweaks \
+     openjdk-11-jdk \
+     openjdk-17-jdk \
      seahorse \
      seahorse-nautilus \
      ttf-mscorefonts-installer \
@@ -36,7 +38,7 @@ bash apps/signal.sh
 
 bash tools/docker.sh
 bash tools/flutter.sh
-bash tools/java.sh
+bash tools/jenv.sh
 bash tools/node.sh
 bash tools/zsh.sh
 
