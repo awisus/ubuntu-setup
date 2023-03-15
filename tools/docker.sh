@@ -2,7 +2,8 @@
 
 sudo apt-get install -y \
      docker.io \
-     docker-compose
+     docker-compose \
+     docker-compose-plugin
 
 sudo groupadd docker
 sudo usermod -aG docker $USER

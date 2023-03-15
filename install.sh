@@ -43,6 +43,8 @@ bash tools/zsh.sh
 # config
 bash fonts/fonts.sh
 
+mkdir -p android
+mkdir -p flutter
 cp config/hidden $HOME/.hidden
 
 gsettings set org.gnome.shell.app-switcher current-workspace-only              true
