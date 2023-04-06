@@ -14,11 +14,12 @@ function update_chromedriver() {
     sudo unzip -o /tmp/chromedriver_linux64.zip -d /usr/bin
 }
 
-print_status "UPDATING CHROMEDRIVER"
-update_chromedriver
-echo "done."
-echo ""
-
+if [ -f "/usr/bin/chromedriver" ] ; then
+    print_status "UPDATING CHROMEDRIVER"
+    update_chromedriver
+    echo "done."
+    echo ""
+fi
 
 print_status "UPDATING SYSTEM"
 update_system
