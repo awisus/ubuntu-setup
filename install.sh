@@ -30,10 +30,8 @@ sudo snap install --classic heroku
 sudo apt  install -y \
      chromium-browser \
      chromium-chromedriver
-sudo snap remove firefox
 
 bash apps/code.sh
-bash apps/firefox.sh
 bash apps/insomnia.sh
 bash apps/signal.sh
 
