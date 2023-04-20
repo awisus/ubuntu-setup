@@ -7,7 +7,6 @@ sudo apt dist-upgrade -y
 sudo apt install -y \
      build-essential \
      curl \
-     chromium-browser \
      deja-dup \
      dconf-editor \
      exfat-fuse \
@@ -27,9 +26,6 @@ sudo snap set system refresh.retain=2
 sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-community
 sudo snap install --classic heroku
-sudo apt  install -y \
-     chromium-browser \
-     chromium-chromedriver
 
 bash apps/code.sh
 bash apps/insomnia.sh
@@ -66,7 +62,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show f
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action            'cycle-windows'
 gsettings set org.gnome.desktop.wm.preferences workspace-names                 "['Terminal', 'Kommunikation', 'Arbeit', 'Spiel']"
 
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'firefox.desktop', 'chromium_chromium.desktop', 'thunderbird.desktop', 'code.desktop', 'org.gnome.gitg.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.Terminal.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'signal-desktop.desktop', 'firefox.desktop', 'thunderbird.desktop', 'code.desktop', 'org.gnome.gitg.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.Terminal.desktop']"
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 echo vm.swappiness = 10                 | sudo tee -a /etc/sysctl.conf
