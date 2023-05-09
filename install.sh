@@ -10,7 +10,6 @@ sudo apt install -y \
      deja-dup \
      dconf-editor \
      exfat-fuse \
-     exfat-utils \
      gimp \
      git \
      gitg \
@@ -23,9 +22,7 @@ sudo apt install -y \
      snapd
 
 sudo snap set system refresh.retain=2
-sudo snap install --classic bitwarden
 sudo snap install --classic intellij-idea-community
-sudo snap install --classic heroku
 
 bash apps/code.sh
 bash apps/insomnia.sh
