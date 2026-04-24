@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec="/home/jens/.local/bin/keylight-control" %U
+Exec="/home/jens/.local/bin/keylight-toggle" %U
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
