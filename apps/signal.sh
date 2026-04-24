@@ -1,9 +1,7 @@
 #!/bin/bash
 
-sudo rm -rf /etc/apt/sources.list.d/signal-xenial.list
-
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+curl -fsSL https://updates.signal.org/desktop/apt/keys.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/signal-desktop-keyring.gpg
+sudo curl -fsSLo /etc/apt/sources.list.d/signal-desktop.sources https://updates.signal.org/static/desktop/apt/signal-desktop.sources
 
 sudo apt update
 sudo apt install -y signal-desktop

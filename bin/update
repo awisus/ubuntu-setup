@@ -20,6 +20,7 @@ fi
 
 print_status "UPDATING SYSTEM"
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove
+sudo snap refresh
 echo "done."
 echo ""
 

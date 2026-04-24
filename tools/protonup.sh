@@ -7,5 +7,6 @@ cd ..
 rm -rf protonup
 
 export PATH="$HOME/.local/bin:$PATH"
-protonup -d "~/.steam/root/compatibilitytools.d/"
+mkdir    -p "~/.local/share/Steam/compatibilitytools.d"
+protonup -d "~/.local/share/Steam/compatibilitytools.d"
 protonup
